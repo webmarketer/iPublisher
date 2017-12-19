@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="iranyekanregular.ttf">
+            <string>IRANYekan</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextAd" customModule="DateConverter" customModuleProvider="target">
+            <connections>
+                <outlet property="adDesc" destination="Esu-p3-foo" id="Nxg-dN-gls"/>
+                <outlet property="adFavicon" destination="zfG-xJ-cJI" id="Efw-yj-hgR"/>
+                <outlet property="adTitle" destination="4hA-mr-xyx" id="Iim-g3-SWB"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gke-CG-Rn2"/>
+                <outlet property="siteFavicon" destination="Nll-N9-A36" id="PsN-zC-JqW"/>
+                <outlet property="siteUrl" destination="jNI-mF-Ouh" id="zPW-K1-aS0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hA-mr-xyx">
+                    <rect key="frame" x="39" y="16" width="320" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ROe-4A-bQ1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="15"/>
+                    <color key="textColor" red="0.015686274510000001" green="0.40000000000000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favicon" translatesAutoresizingMaskIntoConstraints="NO" id="zfG-xJ-cJI">
+                    <rect key="frame" x="16" y="16" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="5pd-mZ-CDB"/>
+                        <constraint firstAttribute="width" constant="15" id="cD4-Pd-NAN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNI-mF-Ouh">
+                    <rect key="frame" x="16" y="40" width="320" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="EUa-Oj-fov"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="13"/>
+                    <color key="textColor" red="0.52549019610000003" green="0.52549019610000003" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esu-p3-foo">
+                    <rect key="frame" x="16" y="65" width="343" height="15.5"/>
+                    <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="13"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nll-N9-A36">
+                    <rect key="frame" x="344" y="43" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="I7S-wZ-C1G"/>
+                        <constraint firstAttribute="height" constant="15" id="U5m-i0-ocy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4hA-mr-xyx" firstAttribute="leading" secondItem="zfG-xJ-cJI" secondAttribute="trailing" constant="8" id="0mI-Xu-dsH"/>
+                <constraint firstItem="Nll-N9-A36" firstAttribute="leading" secondItem="jNI-mF-Ouh" secondAttribute="trailing" constant="8" id="8Ql-35-9cV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Esu-p3-foo" secondAttribute="trailing" constant="16" id="A6j-O8-9rV"/>
+                <constraint firstItem="Nll-N9-A36" firstAttribute="top" secondItem="4hA-mr-xyx" secondAttribute="bottom" constant="7" id="BCQ-vg-Dv2"/>
+                <constraint firstItem="zfG-xJ-cJI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="DnX-yf-HHR"/>
+                <constraint firstItem="Esu-p3-foo" firstAttribute="top" secondItem="jNI-mF-Ouh" secondAttribute="bottom" constant="4" id="Kg4-ZE-nyH"/>
+                <constraint firstItem="Esu-p3-foo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="RAI-Ut-teI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Nll-N9-A36" secondAttribute="trailing" constant="16" id="UGY-s4-wXh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4hA-mr-xyx" secondAttribute="trailing" constant="16" id="faC-se-A7b"/>
+                <constraint firstItem="jNI-mF-Ouh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hsw-ub-HhQ"/>
+                <constraint firstItem="jNI-mF-Ouh" firstAttribute="top" secondItem="4hA-mr-xyx" secondAttribute="bottom" constant="4" id="j3Z-LY-96g"/>
+                <constraint firstItem="zfG-xJ-cJI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="nNX-ax-bnp"/>
+                <constraint firstItem="4hA-mr-xyx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="ssh-Gf-bZy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favicon" width="42" height="42"/>
+    </resources>
+</document>
